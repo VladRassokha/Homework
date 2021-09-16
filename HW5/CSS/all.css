@@ -1,0 +1,37 @@
+p{
+    font-size: 20px;
+    line-height: 25px;
+    text-indent: 45px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 5px;
+}
+
+.bg-box{
+    height: 600px;
+    width: auto;
+    background: 
+        url('https://img2.goodfon.ru/wallpaper/big/0/5b/pole-zelen-trava-dom-derevya.jpg') center no-repeat,
+        url('https://www.freeiconspng.com/uploads/grass-png-images-pictures-transparent-28.png') bottom / 250px auto repeat-x, 
+        url('https://www.freeiconspng.com/uploads/lamp-png-0.png') top / 30px auto repeat-x,
+        url('https://vignette.wikia.nocookie.net/mashaandthebear/images/e/e0/%D0%81%D0%B6%D0%B8%D0%BA.png/revision/latest?cb=20180209130328&path-prefix=ru') left / 30px auto repeat-y,
+        url('image/ponchick.png') right / 30px auto repeat-y,
+        green;
+}
+
+div[class^='box'] {
+    width: 100px;
+    height: 100px;
+}
+
+.box1 {
+    background: linear-gradient(to bottom, #ffffff 0%,#ffffff 0%,#ffffff 10%,green 10%,green 20%,#ffffff 20%,#ffffff 30%,#ffffff 30%,green 30%, green 40%,#ffffff 40%,#ffffff 50%, green 50%, green 60%,#ffffff 60%,#ffffff 70%, green 70%, green 80%,#ffffff 80%,#ffffff 90%, green 90%, green 100%,#ffffff 100%, green 100%,#ffffff 100%);
+}
+
+.box2{
+    background: linear-gradient(135deg, #000000 0%,#000000 20%,#939393 20%,#939393 80%,#000000 80%,#000000 100%);
+}
+
+.box3{
+    background: radial-gradient(ellipse at center, #ff0000 0%,#ff0000 0%,#ff0000 20%,#000000 20%,#000000 80%,#000000 100%);
+}

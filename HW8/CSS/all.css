@@ -1,0 +1,200 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+:after,
+:before{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+.container{
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header{
+    background: #D3B714;
+    padding: 20px 0;
+}
+
+.header-wrap{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    max-width: 150px;
+    max-height: 50px;
+}
+
+.nav{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.nav-list li + li{
+    padding-left: 12px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.aside{
+    text-align: center;
+    max-width: 210px;
+    width: 100%;
+    padding: 40px 15px;
+}
+
+.content {
+    padding: 25px 12px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.aside-left{
+    background: pink;
+    order: -1;
+}
+
+.aside-right{
+    background: #9CB1C7;
+}
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background: #A3ED85;
+}
+
+.title{
+    text-transform: uppercase;
+}
+
+.d-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -6px;
+}
+
+.col{
+    width: 33.33%;
+    padding: 0 6px 12px;
+}
+
+.card {
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover{
+    border: 3px solid red;
+    padding: 18px;
+}
+
+.card-img {
+    height: 117px;
+    width: 117px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    border: 10px solid #C7B7B7;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.btm {
+    padding: 6px 15px;
+    border: 1px solid rgb(100, 50, 156);
+    border-radius: 10px;
+    background: rgb(100, 50, 156);
+}
+
+.btm a{
+    color: white;
+}
+
+.holder{
+    border: 3px solid black;
+    border-radius: 20px 20px 0 0;
+    max-width: 400px;
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+    text-align: center;
+}
+
+.item1{
+    background: rgb(223, 77, 114);
+    width: 50%;
+    order: -3;
+}
+
+.item2{
+    background: rgb(54, 91, 216);
+    flex-grow: 1;
+}
+
+.item3{
+    background: rgb(102, 3, 173);
+    flex-grow: 1;
+    order: -1;
+}
+
+.item4{
+    background: green;
+    flex-grow: 1;
+}
+
+.item5{
+    background: orange;
+    width: 50%;
+    order: -2;
+}

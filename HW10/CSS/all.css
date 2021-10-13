@@ -1,0 +1,284 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+:after,
+:before{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    min-width: 320px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+.container{
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header{
+    position: relative;
+    background: #D3B714;
+    padding: 20px 0;
+}
+
+.header-wrap{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    max-width: 150px;
+    max-height: 50px;
+}
+
+.burger-i{
+    position: absolute;
+    left: -999999px;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.burger-i:checked + label::before{
+    transition: transform .3s ease-in;
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.burger-i:checked + label::after{
+    transition: transform .3s ease-in;
+    transform: rotate(-45deg);
+    bottom: 8px;
+}
+
+.burger-i:checked + label span{
+    display: none;
+}
+
+.burger{
+    position: relative;
+    width: 25px;
+    height: 20px;
+    display: block;
+}
+
+.burger::before,
+.burger::after,
+.burger span{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-radius: 4px;
+    background: #000;
+}
+
+.burger::before{
+
+    content: '';
+    top: 0;
+}
+
+.burger::after{
+    content: '';
+    bottom: 0;
+}
+
+.burger span{
+    top: 8px;   
+}
+
+.burger-i:checked ~ .nav-list{
+    opacity: 1;
+    visibility: visible;
+    transition: opasity .3s ease-in;
+}
+
+.nav{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #D3B714;
+    text-align: center;
+    flex-direction: column;
+}
+
+.nav-list li{
+    padding-bottom: 10px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.aside{
+    text-align: center;
+    width: 100%;
+    padding: 40px 15px;
+}
+
+.content {
+    padding: 25px 12px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.aside-left{
+    background: pink;
+}
+
+.aside-right{
+    background: #9CB1C7;
+}
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background: #A3ED85;
+}
+
+.title{
+    text-transform: uppercase;
+}
+
+.d-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -6px;
+}
+
+.col{
+    width: 100%;
+    padding: 0 6px 12px;
+    font-size: 14px;
+}
+
+.card {
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover{
+    border: 3px solid red;
+    padding: 18px;
+}
+
+.card-img {
+    height: 117px;
+    width: 117px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    border: 10px solid #C7B7B7;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.btm {
+    padding: 6px 15px;
+    border: 1px solid rgb(100, 50, 156);
+    border-radius: 10px;
+    background: rgb(100, 50, 156);
+}
+
+.btm a{
+    color: white;
+}
+
+@media(min-width: 480px){
+    .col{
+        width: 50%;
+    }
+}
+
+@media(min-width: 768px){
+    .col{
+        width: 33.33%;
+        font-size: 16px;
+    }
+}
+
+@media(min-width: 1024px){
+    .main{
+        flex-direction: row;
+    }
+
+    .col{
+        font-size: 16px;
+    }
+
+    .aside{
+        max-width: 210px;
+    }
+
+    .aside-left{
+        order: -1;
+    }
+
+    .burger{
+        display: none;
+    }
+
+    .nav-list{
+        position: static;
+        margin-left: 10px;
+        flex-direction: row;
+        opacity: 1;
+        visibility: visible;
+        transition: opasity .3s ease-in;
+    }
+
+    .nav-list li {
+        padding-bottom: 0;
+    }
+
+    .nav-list li + li{
+        padding-left: 12px;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/all.css">
+    <title>Homework 9</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="#" class="form">
+            <fieldset>
+                <legend class="leg">Контактная информация</legend>
+                <div class="inf">
+                    <div class="form-item">
+                        <label for="name">Имя *</label>
+                        <input id="name" type="text">
+                    </div>
+                    <div class="form-item">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email">
+                    </div>
+                    <div class="form-item">
+                        <label for="tel">Телефон</label>
+                        <input id="tel" type="tel">
+                    </div>
+                    <div class="select">
+                        <label for="str">Страна</label>
+                        <select name="str" id="str">
+                            <option value="EN">Англия</option>
+                            <option value="TR">Турция</option>
+                            <option value="CN">Китай</option>
+                            <option value="UA">Украина</option>
+                            <option value="CL">Чили</option>
+                        </select>  
+                    </div>
+                    <div class="comment">
+                        <label for="comment">Комментарий</label>
+                        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="checkbox">
+                        <input id="checkbox" type="checkbox" name="checkbox">
+                        <label class="cust" for="checkbox">Вариант 1</label>
+                        <input id="checkbox-1" type="checkbox" name="checkbox">
+                        <label class="cust" for="checkbox-1">Вариант 2</label>
+                        <input id="checkbox-2" type="checkbox" name="checkbox">
+                        <label class="cust" for="checkbox-2">Вариант 3</label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-btn">
+                <button class="btn" type="submit">Отправить</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
